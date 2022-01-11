@@ -13,6 +13,11 @@ for d in commont:
 print(sum_len)
 print('留言的平均長度為', sum_len/len(commont))
 
+new = [] #長度小於100的清單
+for d in commont:
+    if len(d) < 100:
+        new.append(d)
+print('一共有', len(new), '比留言長度小於100')
 
 
 
